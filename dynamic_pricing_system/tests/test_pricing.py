@@ -10,7 +10,7 @@ class TestPricingStrategies(unittest.TestCase):
 
     def test_demand_based_pricing(self):
         strategy = DemandBasedPricing(0.2)
-        expected_price = 50000 * 1.2
+        expected_price = 50000 * 1.2     # Check the initial formula in pricing_strategy file to get expected price
         self.assertAlmostEqual(strategy.calculate_price(self.product), expected_price)
 
     def test_competitor_based_pricing(self):

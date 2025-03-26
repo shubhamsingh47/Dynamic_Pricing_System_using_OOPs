@@ -2,7 +2,7 @@ from .pricing_strategy import DemandBasedPricing, CompetitorPricing, InventoryPr
 
 
 class PricingFactory:
-    @staticmethod
+    @staticmethod      # It will not interact with class attributes
     def get_pricing_strategy(strategy_type, **kwargs):
         strategies = {
             "demand": DemandBasedPricing(kwargs.get("demand_factor", 0.1)),

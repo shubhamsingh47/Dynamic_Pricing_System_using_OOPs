@@ -4,6 +4,7 @@ import mysql.connector as connection
 class Database:
     def __init__(self, host="localhost", user="root", password="", database="pricing"):
         try:
+            # First creating a database along with establishing connection
             temp_conn = connection.connect(
                 host=host,
                 user=user,
@@ -24,6 +25,7 @@ class Database:
 
             # Create the products table
             self.create_table()
+
         except connection.Error as err:
             print(f"Error connecting to the database: {err}")
             self.conn = None
@@ -64,6 +66,6 @@ class Database:
 
     def __del__(self):
         # close the connection
-        if hasattr(self, 'conn') and self.conn:
+        if hasattr(self, 'conn') and self.conn:   # First it checks if the object (self) has an attribute named conn then closes it.
             self.conn.close()
             print("Database connection closed.")

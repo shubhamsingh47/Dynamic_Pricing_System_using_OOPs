@@ -14,7 +14,7 @@ project_structure = {
         "config.py",
         "main.py",
         "requirements.txt",
-        "README.md"
+        # "README.md"     Also add readme file if you want
     ]
 }
 

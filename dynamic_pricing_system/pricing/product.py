@@ -1,4 +1,5 @@
 class Product:
+    # Simple function to initialize product details
     def __init__(self, name, base_price, category):
         self.name = name
         self.base_price = base_price

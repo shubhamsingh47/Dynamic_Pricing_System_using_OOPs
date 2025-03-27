@@ -17,7 +17,11 @@
   9. Automation 
 
 ## Overview
-### The Dynamic Pricing System is designed to revolutionize pricing strategies in an e-commerce platform using advanced Object-Oriented Programming (OOP) principles. This system dynamically adjusts product prices in real-time based on key factors such as demand, competitor pricing, inventory levels, and user behavior. It is built to be flexible, scalable, and modular, ensuring seamless integration and efficient management.
+### The Dynamic Pricing System is designed to revolutionize pricing strategies in an e-commerce platform using advanced Object-Oriented Programming (OOP) principles. 
+
+#### This system dynamically adjusts product prices in real-time based on key factors such as demand, competitor pricing, inventory levels, and user behavior. 
+
+#### It is built to be flexible, scalable, and modular, ensuring seamless integration and efficient management.
 
 ## Project goals
 * 1. Implement a robust dynamic pricing system for e-commerce platforms.
